@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoldFishNet - Fishing, риболовля, рибалка</title>
 
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
@@ -18,20 +20,28 @@
     <header class="header-section">
       <nav class="page-nav container">
         <div class="menu-wraper">
-          <a class="logo-link link" href="/"
-            ><img
-              src="./img/logo-goldfishnet.svg"
-              alt="GoldFisNet logo"
-              width="60"
-              height="60"
-          /></a>
+          <a class="logo-link link" href="/" title="GoldFishNet">
+            <svg class="menu-svg" width="60" height="60">
+              <use href="./img/logo.svg#icon-logo"></use>
+            </svg>
+          </a>
 
           <ul class="menu list">
             <li class="menu-item">
-              <a class="menu-link link" href="">Карта</a>
+              <a class="menu-link link" href="">
+                <svg class="menu-svg" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-map-o"></use>
+                </svg>
+                Карта</a
+              >
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="">Звіти</a>
+              <a class="menu-link link" href="">
+                <svg class="menu-svg" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-quill"></use>
+                </svg>
+                Звіти</a
+              >
             </li>
             <li class="menu-item">
               <a class="menu-link link" href="">Риби</a>
@@ -500,25 +510,48 @@
       <div class="footer-container container">
         <ul class="footer-social list">
           <li class="footer-social-item">
-            <a class="footer-social-link link" href="">F</a>
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-svg" width="32" height="32">
+                <use href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link link" href="">I</a>
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-svg" width="32" height="32">
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link link" href="">Y</a>
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-svg" width="32" height="32">
+                <use href="./img/sprite.svg#icon-paper-plane"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link link" href="">T</a>
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-svg" width="32" height="32">
+                <use href="./img/sprite.svg#vk"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link link" href="">V</a>
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-svg" width="32" height="32">
+                <use href="./img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
 
         <p class="footer-copirate">GoldFіshNet © 2023</p>
 
         <ul class="footer-links list">
+          <li footer-links-item>
+            <a class="footer-links-link link" href="">Блог</a>
+          </li>
           <li footer-links-item>
             <a class="footer-links-link link" href="">Риболовна карта</a>
           </li>
@@ -534,14 +567,8 @@
 
         <ul class="footer-links list">
           <li footer-links-item>
-            <a class="footer-links-link link" href="">Блог</a>
-          </li>
-          <li footer-links-item>
             <a class="footer-links-link link" href="">Річки</a>
           </li>
-        </ul>
-
-        <ul class="footer-links list">
           <li footer-links-item>
             <a class="footer-links-link link" href="">Види риб </a>
           </li>
