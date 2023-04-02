@@ -119,6 +119,7 @@ img {
 .menu-author-wraper {
   display: flex;
   align-items: center;
+  vertical-align: ;
 }
 
 .menu-author {
@@ -209,15 +210,19 @@ img {
 .subtitle-wraper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-subtitle {
-  width: 140px;
+  width: 150px;
   font-size: 12px;
   line-height: 1.5;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  /* display: flex; */
+  /* justify-content: left;
+  align-items: center; */
 }
 
 .main-subtitle:last-child {
@@ -235,6 +240,30 @@ img {
   content: ", ";
   margin-left: -3px;
   padding: 0;
+}
+
+.options-wraper {
+}
+
+.options-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.options-item {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.fish-wraper {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
 }
 
 .fish-link {
