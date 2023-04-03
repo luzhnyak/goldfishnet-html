@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoldFishNet - Fishing, риболовля, рибалка</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header-section">
+      <nav class="page-nav container">
+        <div class="menu-wraper">
+          <a class="logo-link link" href="/" title="GoldFishNet">
+            <svg class="menu-svg" width="60" height="60">
+              <use href="./img/logo.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link" href="">
+                <svg class="menu-svg" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-map-o"></use>
+                </svg>
+                Карта</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">
+                <svg class="menu-svg" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-quill"></use>
+                </svg>
+                Звіти</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Риби</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Публікації</a>
+            </li>
+            <li class="menu-item"><a class="menu-link link" href="">Чат</a></li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Інше</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-author-wraper">
+          <form class="form-search" method="GET" action="/search">
+            <input
+              class="form-search-input"
+              name="q"
+              type="search"
+              placeholder="Пошук"
+            />
+            <button class="form-search-btn" type="submit">Пошук</button>
+          </form>
+
+          <ul class="menu-author list">
+            <li class="menu-author-item">
+              <a class="menu-author-link link" href="">Додати водойму</a>
+            </li>
+            <li class="menu-author-item">
+              <a class="menu-author-link link" href="">Додати звіт</a>
+            </li>
+            <li class="menu-author-item">
+              <a class="menu-author-link link" href="">Додати публікацію</a>
+            </li>
+            <li class="menu-author-item">
+              <a class="menu-author-link link" href="">Увійти</a>
+            </li>
+            <li class="menu-author-item">
+              <a class="menu-author-link link" href="">Зареєструватися</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <div class="container">
+        <section class="article-section">
+          <h1 class="article-title">
+            Тернопільські динозаври. Ловля лящів на Тернопільському ставку.
+          </h1>
+
+          <ul class="breadcrumb list">
+            <li class="breadcrumb-item">
+              <a class="link" href="/">Головна</a>
+            </li>
+
+            <li class="breadcrumb-item">
+              <a class="link" href="/blog/">Звіти з риболовлі</a>
+            </li>
+
+            <li class="breadcrumb-item active" aria-current="page">
+              Тернопільські динозаври. Ловля лящів на Тернопільському ставку
+            </li>
+          </ul>
+          <div class="article-text">
+            <p>
+              Файне місто Тернопіль, рибалив на міському озері і поставив для
+              себе особистий рекорд по лящу, лящ заважив 2200. Ще в улові були
+              коропи але вони дуже часто зрізали поводок об бровки та ракушки.
+            </p>
+          </div>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ydfvwPkaVq4"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+
+          <ul class="options list">
+            <li>
+              <a href="#" id="like" class="like link" title="Подобається"
+                ><svg width="16" height="16">
+                  <use
+                    href="./img/card-icon.svg#icon-thumbs-o-up"
+                  ></use></svg></a
+              >1
+            </li>
+            <li>
+              <span class="blogs-item-info-item" title="Дата риболовлі"
+                ><svg width="16" height="16">
+                  <use href="./img/card-icon.svg#icon-calendar"></use>
+                </svg>
+                2021-09-12</span
+              >
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./img/card-icon.svg#icon-user"></use>
+              </svg>
+              <a class="link" href="/blog/author/Українська Рибалка">
+                Українська Рибалка</a
+              >
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./img/card-icon.svg#icon-map-marker"></use>
+              </svg>
+              <a class="link" href="/map/place-info/522">Тернопільський став</a>
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./img/card-icon.svg#icon-tag"></use>
+              </svg>
+              <a class="link" href="/fish/lyasch">Лящ</a>
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./img/card-icon.svg#icon-youtube-play"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./img/card-icon.svg#icon-eye"></use>
+              </svg>
+              520
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./img/card-icon.svg#icon-comment"></use>
+              </svg>
+              0
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer-section">
+      <div class="footer-container container">
+        <ul class="footer-social list">
+          <li class="footer-social-item">
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-svg" width="32" height="32">
+                <use href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-svg" width="32" height="32">
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-svg" width="32" height="32">
+                <use href="./img/sprite.svg#icon-paper-plane"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-svg" width="32" height="32">
+                <use href="./img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-svg" width="32" height="32">
+                <use href="./img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer-copirate">GoldFіshNet © 2023</p>
+
+        <ul class="footer-links list">
+          <li footer-links-item>
+            <a class="footer-links-link link" href="">Блог</a>
+          </li>
+          <li footer-links-item>
+            <a class="footer-links-link link" href="">Риболовна карта</a>
+          </li>
+          <li footer-links-item>
+            <a class="footer-links-link link" href="">Довідник рибалки</a>
+          </li>
+          <li footer-links-item>
+            <a class="footer-links-link link" href=""
+              >Політика конфіденційності</a
+            >
+          </li>
+        </ul>
+
+        <ul class="footer-links list">
+          <li footer-links-item>
+            <a class="footer-links-link link" href="">Річки</a>
+          </li>
+          <li footer-links-item>
+            <a class="footer-links-link link" href="">Види риб </a>
+          </li>
+          <li footer-links-item>
+            <a class="footer-links-link link" href="">Публікації </a>
+          </li>
+          <li footer-links-item>
+            <a class="footer-links-link link" href="">Телеграм бот</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
