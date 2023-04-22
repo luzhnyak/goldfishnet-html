@@ -18,14 +18,20 @@
   <body>
     <!-- HEADER -->
     <header class="header-section">
-      <nav class="page-nav container">
-        <div class="menu-wrapper">
-          <a class="logo-link link" href="/" title="GoldFishNet">
-            <svg class="menu-svg" width="60" height="60">
-              <use href="./img/logo.svg#icon-logo"></use>
-            </svg>
-          </a>
-
+      <div class="header-container container">
+        <!-- <div class=""> -->
+        <a class="logo-link link" href="/" title="GoldFishNet">
+          <svg class="menu-svg" width="60" height="60">
+            <use href="./img/logo.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button class="menu-open-btn js-open-menu" type="button">
+          <svg class="burger-icon" width="32" height="32">
+            <use class="" href="./img/sprite.svg#icon-bars"></use>
+          </svg>
+        </button>
+        <!-- </div> -->
+        <nav class="menu-container js-menu-container" id="mobile-menu">
           <ul class="menu list">
             <li class="menu-item">
               <a class="menu-link link" href="">
@@ -49,13 +55,58 @@
             <li class="menu-item">
               <a class="menu-link link" href="">Публікації</a>
             </li>
-            <li class="menu-item"><a class="menu-link link" href="">Чат</a></li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Чат</a>
+            </li>
             <li class="menu-item">
               <a class="menu-link link" href="">Інше</a>
             </li>
           </ul>
-        </div>
-        <div class="menu-auth-wrapper">
+
+          <ul class="menu-auth list">
+            <li class="menu-auth-item">
+              <a class="menu-auth-link link" href="">
+                <svg class="menu-auth-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-plus"></use>
+                </svg>
+                Додати водойму</a
+              >
+            </li>
+            <li class="menu-auth-item">
+              <a class="menu-auth-link link" href="">
+                <svg class="menu-auth-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-plus"></use>
+                </svg>
+                Додати звіт
+              </a>
+            </li>
+            <li class="menu-auth-item">
+              <a class="menu-auth-link link" href="">
+                <svg class="menu-auth-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-plus"></use>
+                </svg>
+                Додати публікацію
+              </a>
+            </li>
+            <li class="menu-auth-item">
+              <a class="menu-auth-link link" href="">
+                <svg class="menu-auth-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-enter"></use>
+                </svg>
+                Увійти
+              </a>
+            </li>
+            <li class="menu-auth-item">
+              <a class="menu-auth-link link" href="">
+                <svg class="menu-auth-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-quill"></use>
+                </svg>
+                Зареєструватися
+              </a>
+            </li>
+          </ul>
+
+          <!-- <div class="menu-auth-wrapper">
           <form class="form-search" method="GET" action="/search">
             <input
               class="form-search-input"
@@ -70,51 +121,10 @@
             <svg class="menu-svg" width="20" height="20">
               <use href="./img/sprite.svg#icon-enter"></use>
             </svg>
-            <ul class="menu-auth list">
-              <li class="menu-auth-item">
-                <a class="menu-auth-link link" href="">
-                  <svg class="menu-auth-icon" width="20" height="20">
-                    <use href="./img/sprite.svg#icon-plus"></use>
-                  </svg>
-                  Додати водойму</a
-                >
-              </li>
-              <li class="menu-auth-item">
-                <a class="menu-auth-link link" href="">
-                  <svg class="menu-auth-icon" width="20" height="20">
-                    <use href="./img/sprite.svg#icon-plus"></use>
-                  </svg>
-                  Додати звіт
-                </a>
-              </li>
-              <li class="menu-auth-item">
-                <a class="menu-auth-link link" href="">
-                  <svg class="menu-auth-icon" width="20" height="20">
-                    <use href="./img/sprite.svg#icon-plus"></use>
-                  </svg>
-                  Додати публікацію
-                </a>
-              </li>
-              <li class="menu-auth-item">
-                <a class="menu-auth-link link" href="">
-                  <svg class="menu-auth-icon" width="20" height="20">
-                    <use href="./img/sprite.svg#icon-enter"></use>
-                  </svg>
-                  Увійти
-                </a>
-              </li>
-              <li class="menu-auth-item">
-                <a class="menu-auth-link link" href="">
-                  <svg class="menu-auth-icon" width="20" height="20">
-                    <use href="./img/sprite.svg#icon-quill"></use>
-                  </svg>
-                  Зареєструватися
-                </a>
-              </li>
-            </ul>
           </div>
-        </div>
-      </nav>
+        </div> -->
+        </nav>
+      </div>
     </header>
     <!-- MAIN -->
     <main>
@@ -648,7 +658,7 @@
         </ul>
       </section>
 
-      <nav class="main-pagination container">
+      <!-- <nav class="main-pagination container">
         <ul class="pagination">
           <li class="page-item disabled"><span class="page-link"> « </span></li>
           <li class="page-item active"><a class="page-link" href="">1</a></li>
@@ -669,7 +679,7 @@
             >
           </li>
         </ul>
-      </nav>
+      </nav> -->
     </main>
     <!-- FOOTER -->
     <footer class="footer-section">
@@ -747,5 +757,7 @@
         </ul>
       </div>
     </footer>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
