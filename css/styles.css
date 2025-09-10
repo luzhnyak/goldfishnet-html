@@ -405,19 +405,28 @@ main .link:hover {
 
 .main-subtitle {
   width: 150px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
   font-size: 12px;
   line-height: 1.5;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   flex-grow: 1;
-  /* display: flex; */
-  /* justify-content: left;
-  align-items: center; */
 }
 
 .main-subtitle:last-child {
-  text-align: right;
+  justify-content: end;
+}
+
+.main-subtitle svg {
+  fill: currentColor;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
 }
 
 .fish-list {
